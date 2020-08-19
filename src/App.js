@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Home from "./Home";
 
 function App(props) {
   const [count, setCount] = useState(0);
   return (
     <div className="App">
       <header className="App-header">
+       <Home/>
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
         {props.showLink ? <a>show link</a> : <a>hide link</a>}
         <p>
